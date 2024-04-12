@@ -1,0 +1,216 @@
+@tableBorder: 1px solid rgba(31,56,88,.1);
+
+.vc-table-field-pc {
+  padding-bottom: 16px;
+
+  &.fn-hide {
+    display: none !important;
+  }
+
+  .vc-table-field-title {
+    color: #333;
+    padding-left: 0;
+    height: 32px;
+    line-height:32px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .vc-table-field-addons {
+    height:40px;
+    line-height: 40px;
+    padding-left: 88px;
+
+    .vc-import-button {
+      margin-left: 10px;
+    }
+
+    .vc-add-button{
+      i {
+        margin-right: 4px;
+      }
+    }
+    .vc-table-maxMsg {
+      color: #999;
+      margin-left: 10px;
+    }
+  }
+
+  .vc-table-field-children {
+    color: #333;
+  }
+
+  .vc-table-action,
+  .vc-table-delete {
+    float: right;
+    color: #3b8fd9;
+    cursor:pointer;
+    margin-right: 20px;
+    &:hover{
+      color: #f37327;
+    }
+  }
+  .vc-table-action-disabled,
+  .vc-table-delete-disabled{
+    color: #ccc;
+    cursor: default;
+    &:hover{
+      color: #ccc;
+    }
+  }
+}
+
+.vc-table-field-pc-horizontal{
+  &.vc-table-field-pc-table-layout{
+    position: relative;
+
+    .vc-table-field-title{
+      width: 88px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: rgba(0,0,0,.8);
+      text-align: right;
+      padding-right: 16px;
+      font-size: 14px;
+      padding-left: 0;
+    }
+
+    .vc-table-field-content.with-label{
+      padding-left: 88px;
+    }
+  }
+}
+.vc-table-field-pc-veritical{
+  &.vc-table-field-pc-table-layout{
+    .vc-table-field-title{
+      color: rgba(0,0,0,.8);
+      font-size: 14px;
+      padding-left: 0;
+      margin-bottom: 4px;
+      height: 22px;
+      line-height: 22px;
+    }
+  }
+  .vc-table-field-addons{
+    padding-left: 0;
+  }
+}
+
+.vc-table-field-pc-table-layout{
+  padding: 0 0 16px 0;
+
+  .vc-table-field-addons{
+    padding-left: 0px;
+  }
+
+  .vc-table-field-table{
+    width: 100%;
+    margin-bottom: 15px;
+
+    .vc-table-field-table-head{
+      display: flex;
+      text-align: left;
+      background-color: rgba(31,56,88,.06);
+      font-size: 12px;
+      font-weight: bold;
+      color: rgba(0,0,0,.6);
+      overflow: hidden;
+    }
+
+    .vc-table-field-table-head .required{
+      color: red;
+      font-size: 14px;
+      font-family: Simsun;
+    }
+
+    .vc-table-field-table-head-col{
+      padding: 0 10px;
+      overflow: hidden;
+      word-break: break-all;
+      white-space: nowrap;
+      // flex-shrink: 1;
+      // flex-grow: 1;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .vc-table-field-table-index{
+      width: 50px;
+      flex-shrink: 0 !important;
+      flex-grow: 0 !important;
+      text-align: center;
+    }
+    .vc-table-field-table-index.vc-table-field-table-body-col{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .vc-table-field-table-operate{
+      line-height: 32px;
+    }
+
+    .vc-table-field-table-body-row{
+      display: flex;
+      align-items: stretch;
+      border-bottom: @tableBorder;
+    }
+
+    .vc-table-action,
+    .vc-table-delete{
+      margin-right: 12px;
+      float: none;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .vc-table-field-table-body-col{
+      padding: 10px;
+
+      .next-form-item {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+      }
+      .next-form-item-control {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1;
+      }
+    }
+  }
+}
+
+/*边框线主题*/
+.vc-table-field-pc-table-layout-border{
+  .vc-table-field-table{
+    .vc-table-field-table-head{
+      border-top: @tableBorder;
+      border-right: @tableBorder;
+    }
+    .vc-table-field-table-head-col{
+      border-left: @tableBorder;
+    }
+    .vc-table-field-table-body-col{
+      border-left: @tableBorder;
+    }
+    .vc-table-field-table-body-row{
+      border-right: @tableBorder;
+    }
+    .vc-table-field-table-body-row:first-child{
+      border-top: @tableBorder;
+    }
+  }
+}
+
+/*斑马纹主题*/
+.vc-table-field-pc-table-layout-zebra{
+  .vc-table-field-table{
+    .vc-table-field-table-body-row{
+      border-bottom: none;
+    }
+    .vc-table-field-table-body-row-even{
+      background: rgba(31,56,88,.04);
+    }
+  }
+}

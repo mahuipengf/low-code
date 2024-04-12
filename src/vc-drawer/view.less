@@ -1,0 +1,57 @@
+.vc-shell.is-phone {
+  .next-drawer-left,
+  .next-drawer-right {
+    max-width: 100%;
+  }
+}
+.vc-drawer {
+  position: fixed;
+  overflow: hidden;
+
+  .next-drawer-close {
+    z-index: 10;
+  }
+
+  .next-drawer-body {
+    height: ~"calc(100% - 46px)";
+    padding: 0 !important;
+  }
+
+  .vc-drawer-container {
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+  }
+
+  .vc-drawer-footer {
+    width: 100%;
+    padding: 12px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #fff;
+    border-top: 1px solid #eee;
+    &.right {
+      text-align: right;
+    }
+
+    &.left {
+      text-align: left;
+    }
+
+    &.center {
+      text-align: center;
+    }
+
+    .next-btn {
+      margin: 0 10px 0 0;
+    }
+
+    .next-btn:last-child {
+      margin: 0;
+    }
+  }
+
+}

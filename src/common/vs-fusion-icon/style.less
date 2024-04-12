@@ -1,0 +1,60 @@
+.vs-icon {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    .vs-icon-blank {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .vs-icon-selected {
+      margin-left: 5px;
+      fill: #fff;
+    }
+    .vs-icon-text {
+      margin-left: 5px;
+      font-size: 12px;
+    }
+    .vs-icon-entry, .vs-icon-del {
+      fill: #fff;
+      opacity: 0.8;
+      margin-left:6px;
+    }
+    &:hover {
+      .vs-icon-entry, .vs-icon-del {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .vs-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+  
+    .vs-icon-list-item {
+      display: flex;
+      height: 40px;
+      width: 25%;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+  
+      > svg {
+        path {
+          fill: #fff;
+        }
+        opacity: 0.8;
+      }
+      &:hover,&.vs-selected {
+        border-color: rgba(255,255,255,0.4);
+        > svg {
+          opacity: 1;
+        }
+      }
+    }
+  }

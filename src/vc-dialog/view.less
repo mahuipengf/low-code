@@ -1,0 +1,23 @@
+.vc-dialog {
+  .vc-dialog-content {
+    overflow: auto;
+    width: 520px;
+  }
+}
+
+@media (max-width: 720px) {
+  .next-dialog {
+    max-width: 96%;
+    margin-top: 10px;
+    .next-dialog-body {
+      padding: 24px 16px 8px;
+    }
+  }
+
+  .vc-dialog {
+    .vc-dialog-content {
+      overflow: inherit;
+      width: ~"calc(100vw - 60px)" !important;
+    }
+  }
+}

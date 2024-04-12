@@ -1,0 +1,88 @@
+.vc-dialog-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vc-dialog {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.vc-dialog-title {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.vc-dialog-close {
+  float: right;
+  cursor: pointer;
+}
+
+.vc-dialog-container {
+  padding: 20px;
+  overflow: auto;
+
+  .vc-dialog-container-empty {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 188, 92, 0.06);
+    border: 1px dashed #66BC5C;
+    font-size: 14px;
+    color: #66BC5C;
+    min-height: 100px;
+  }
+
+  .kuma-uxform-field {
+    float: none !important;
+  }
+}
+
+.vc-dialog-options {
+  text-align: right;
+  padding: 16px;
+  border-top: 1px solid rgba(31, 56, 88, .1);
+
+  .kuma-button {
+    margin-right: 10px;
+  }
+
+  .kuma-button:last-child {
+    margin-right: 0;
+  }
+}
+
+.vc-dialog-footer {
+  padding: 12px 20px;
+
+  button {
+    margin: 0 10px 0 0;
+  }
+  button:last-child {
+    margin: 0;
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}

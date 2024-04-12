@@ -1,0 +1,56 @@
+.vc-table-pc {
+  .vc-table-pc-action-bar {
+    margin-bottom: 2px;
+    min-height: 30px;
+
+    .vc-table-pc-action-buttons {
+      display: inline-block;
+      margin-bottom: 10px;
+
+      .next-btn {
+        margin-right: 10px;
+      }
+      .next-btn:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .vc-table-pc-action-bar-right {
+      margin-bottom: 10px;
+      float: right;
+    }
+
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+
+  .overflow-hidden-cell {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .error-cell{
+    color: red;
+  }
+
+  .vc-table-pc-pagination {
+    margin-top: 12px;
+  }
+  .vc-table-pc-pagination-left {
+    text-align: left;
+  }
+  .vc-table-pc-pagination-right {
+    text-align: right;
+  }
+}
+
+.engine-design-mode {
+  .next-table, .vc-table-pc-action-bar, .vc-table-pc-pagination {
+    pointer-events: none;
+  }
+}

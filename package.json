@@ -1,0 +1,70 @@
+{
+  "name": "@ali/vc-deep",
+  "version": "2.18.22",
+  "description": "vc-deep Component for VisualEngine & RenderEngine",
+  "componentName": "vc-button",
+  "main": "build/view.js",
+  "devices": [
+    "pc",
+    "mobile"
+  ],
+  "scripts": {
+    "start": "vdev start -m @ali/vu-fusion-style-basic,vc-employee-field,vc-page-section,vc-button,vc-transfer-field,vc-text-field,vc-image-field,vc-attachment-field,vc-dialog,vc-balloon,vc-breadcrumb,vc-calendar,vc-card,vc-cascader,vc-cascade-select-field,vc-checkbox-field,vc-city-select-field,vc-collapse,vc-columns-layout,vc-date-field,vc-cascade-date-field,vc-time-field,vc-dropdown,vc-filter,vc-filter2,vc-form,vc-icon,vc-menu,vc-menu-button,vc-message,vc-number-field,vc-page-header,vc-pagination,vc-paragraph,vc-progress,vc-radio-field,vc-range-field,vc-rate-field,vc-rich-text,vc-search,vc-select-field,vc-slider,vc-switch-field,vc-tabs-layout,vc-table-pc,vc-table-field,vc-editable-tag,vc-timeline,vc-time-field,vc-tree,vc-tree-select-field,vc-affix,vc-steps,vc-float-nav,@ali/vc-slot,@ali/vc-page --no-rax --esbuild --dev-env=3",
+    "build": "vdev build",
+    "all": "npm run build &&  vdev start --run-build -m @ali/vu-fusion-style-basic",
+    "add": "vdev new --component",
+    "build:babel": "vdev build --babel",
+    "pub": "vdev publish --tag latest",
+    "beta": "vdev publish --tag beta",
+    "syncShell": "node ./sync-shell",
+    "build:script": "vdev build --script -V",
+    "path": "vdev start --path vc-filter2 -m @ali/vu-fusion-style-basic,vc-text-field,vc-form,vc-input,vc-button,@ali/vc-block --react-version 16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:vision-components/vc-deep.git"
+  },
+  "author": "legao",
+  "contributors": [],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
+  },
+  "devDependencies": {
+    "@ali/vc-page": "^1.0.1-beta.1",
+    "@ali/vc-slot": "^0.1.0",
+    "@ali/vu-fusion-style-basic": "^1.0.10",
+    "shelljs": "^0.8.4",
+    "@ali/visualengine": "^4.2.0-beta.0",
+    "@ali/visualengine-utils": "^3.10.9"
+  },
+  "dependencies": {
+    "@ali/deep": "~1.41.32",
+    "@ali/i18n-transform": "^2.1.0",
+    "@ali/intl-common-info": "^1.0.1",
+    "@ali/intl-universal": "^0.4.12",
+    "@ali/re-utils": "^2.1.0",
+    "@ali/smart-table": "^0.4.0-alpha.7",
+    "@ali/smart-table-components": "^0.3.0-alpha.29",
+    "@ali/vc-block": "^2.3.1",
+    "@ali/ve-less-variables": "^2.0.3",
+    "@ali/ve-utils": "^1.1.3",
+    "@ali/vu-events-property": "^3.0.1",
+    "@ali/vu-field-property": "^3.2.0",
+    "@ali/vu-slot-property": "^2.0.0",
+    "@ali/vu-style-property": "^3.0.0",
+    "@ali/vu-style-sheet": "^2.0.0",
+    "@ali/vu-uuid-property": "^1.0.0",
+    "@alifd/layout": "^0.1.19",
+    "@alifd/next": "^1.19.22",
+    "big.js": "^5.2.2",
+    "classnames": "^2.0.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.1",
+    "prop-types": "^15.7.2",
+    "reqwest": "^2.0.5"
+  },
+  "visionMetaData": {
+    "series": "FUSION"
+  }
+}
